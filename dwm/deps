@@ -1,0 +1,6 @@
+#Requiered libs  for dwm 
+-------------------------
+libX11-devel 
+fontconfig-devel 
+libXinerama-devel
+libXft-devel
