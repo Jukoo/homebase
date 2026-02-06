@@ -37,6 +37,8 @@ while true; do
   bat=`acpi -b | cut  -d , -f2`
   xprop -root -set WM_NAME "::$(date '+%A,%B %-d,%-I:%M %p')${bat}"
   sleep 15
-done &
+done & 
 
-exec dwm
+pulseaudio --start &
+dbuxs-launch &  
+exec dwm 
